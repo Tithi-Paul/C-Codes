@@ -1,0 +1,20 @@
+///1553_A
+
+#include<stdio.h>
+int main()
+{
+    int t;
+    scanf("%d", &t);
+    while(t--)
+    {
+        int n, ans;
+        scanf("%d", &n);
+
+        if(n%10 < 9)
+            ans =  n/10;
+        else
+            ans = (n/10)+1;
+        printf("%d\n", ans);
+    }
+    return 0;
+}
